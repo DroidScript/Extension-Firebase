@@ -1,1 +1,1 @@
-["firebase deploy", "firebase serv", "firebase login", "firebase list"]
+[ "firebase deploy", "firebase serv", "firebase serve", "firebase list", "firebase use" ]
