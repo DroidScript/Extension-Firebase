@@ -11,9 +11,7 @@
  * @information
  * https://github.com/firebase/firebase-tools
  * https://github.com/firebase/firebase-tools/tree/master/src/commands
- * minor tweaks done to firebase-tools/lib/commands/login.js 
- * and firebase-tools//lib/logger.js
- * therefore download node modules from androidscript.org/alpha/Firebase/
+ * minor tweaks done to firebase-tools/lib/commands/login.js and firebase-tools//lib/logger.js
  */
 
 var isFirebaseLoaded = false
@@ -127,5 +125,21 @@ const deploy = function () {
     })
 }
   
+const help = function () {
+  init(()=>{
+    console.log(`%c Help Information :`,'color:orange')
+    client.help({})
+    .then(data => { console.log( data ) })
+    .catch(err => { console.log( err.toString) })
+  })
+}
 
+const open = function () {
+  init(()=>{
+    console.log(`%c Opening Your Browser`,'color:orange')
+    client.open( { name: "Analytics"} )
+    .then(data => { console.log(data[0]) )
+    .catch(err => { console.log('An Error Occured :', err ) })
+  })
+}
 

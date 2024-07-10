@@ -8,7 +8,7 @@ The next step is to get your firebase key (the config), you should find this in 
 It should be at the top level of your project, not in a subfolder.
 
 Copy the json in that area, create a file called firebase.json
-![](docImages/slide1.png)
+![](imgFolder/slide1.png)
 
 In your firebase.json code extend it to include the hosting object, the final thing should look like this :
 
@@ -43,15 +43,15 @@ The next step is to configure admin access, so move to the DroidScript folder, y
 In the DroidScript folder add a new folder called `.keys`.
 Then add a folder with the same name as your project.
 
-![Folder in DroidScript/.keys](docImages/slide2.png)
+![Folder in DroidScript/.keys](imgFolder/slide2.png)
 
 In that folder add the file `firebase-key.json`, this file is not the same as the firebase.json file made earlier.
 
-![Firebase Dashboard @ service accounts](docImages/slide3.png)
+![Firebase Dashboard @ service accounts](imgFolder/slide3.png)
 
 This file should have the service account json keys, click generate new private key, and a file will be downloaded, copy its contents and create firebase-key.json in the folder.
 
-![Folder in DroidScript/.keys/projectname](docImages/slide4.png)
+![Folder in DroidScript/.keys/projectname](imgFolder/slide4.png)
 
 The last step is to create a public folder and add an index.html file, in your DroidScript project folder.
 
